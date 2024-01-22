@@ -1,3 +1,25 @@
+
 .container {
+    height: 100vh;
     display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 1fr 7fr;
+}
+
+.sidebar {
+    border-style: solid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.search {
+    border-style: solid;
+}
+
+.header {
+    border-style: solid;
+}
+
+.project {
+    border-style: solid;
 }

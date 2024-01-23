@@ -1,5 +1,7 @@
 body {
-    background-color: black;
+    background-color: #a1a1aa;
+    padding: 0;
+    margin: 0;
 }
 .container {
     height: 100vh;
@@ -12,10 +14,12 @@ body {
 .wrapper {
     grid-row: 1;
     grid-column: 1;
-    background-color: #c7d2fe;
+    background-color: #64748b;
+    color: #e2e8f0;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-style: solid;
 
 }
 
@@ -24,10 +28,11 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .sidebar {
-    border-style: solid;
+    
     grid-column: 1 / 2;
     grid-row: 2 / 4 ;
-    background-color: #ddd6fe;
+    background-color: #64748b;
+    color: #e2e8f0;
     padding-left: 40px;
     display: flex;
     justify-content: flex-start;
@@ -39,7 +44,9 @@ body {
 .sidebar > ul > li {
     font-size: 50px;
     margin-top: 30px;
-    font-
+    font-weight: 900;
+    list-style-type: none;
+    margin-bottom: 30px;
 }
 
 .search {
@@ -47,7 +54,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
-    background-color: grey;
+    background-color: #64748b;
     
 }
 
@@ -79,6 +86,7 @@ body {
     display: grid;
     grid-template-columns: 5fr 2fr;
     grid-template-rows: 1fr 1fr;
+    gap: 8px;
 }
 
 .your_projects {
@@ -101,8 +109,8 @@ body {
     grid-column: 2;
     padding-left: 30px;
     border-style: solid;
-    border-color: aqua;
-    border-width: 40px;
+    border-color: #71717a;
+    border-width: 15px;
     border-radius: 10px;
     display: grid;
 }
@@ -111,8 +119,9 @@ body {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     border-style: solid;
+    border-color: #71717a;
     border-radius: 10px;
-    border-width: 40px;
+    border-width: 15px;
 }
 
 .announcments_box > div,
@@ -132,6 +141,9 @@ body {
     grid-row: 2;
     border-radius: 30px;
     width: 200px;
+    font-size: 40px;
+    color: #e2e8f0;
+    background-color: #64748b;
 }
 
 .greeting {

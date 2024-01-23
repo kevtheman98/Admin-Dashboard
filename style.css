@@ -1,8 +1,10 @@
-
+body {
+    background-color: black;
+}
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 2fr 6fr;
+    grid-template-columns: 1fr 6fr;
     grid-template-rows: 1fr 1fr 7fr;
 }
 
@@ -10,7 +12,7 @@
 .wrapper {
     grid-row: 1;
     grid-column: 1;
-    background-color: #ddd6fe;
+    background-color: #c7d2fe;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,6 +39,7 @@
 .sidebar > ul > li {
     font-size: 50px;
     margin-top: 30px;
+    font-
 }
 
 .search {
@@ -60,6 +63,7 @@
     justify-self: center;
 }
 
+
 .notification {
     grid-column: 3;
 }
@@ -80,16 +84,17 @@
 .your_projects {
     grid-row: 1 / 3;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
     
 }
 
 .card {
-    height: 300px;
-    width: 300px;
-    background-color: yellow;
+    height: 400px;
+    width: 600px;
+    background-color: #f5f5f5;
     align-self: center;
     justify-self: center;
+    border-radius: 10px;
 }
 
 .announcments_box {
@@ -114,4 +119,38 @@
 .trending > div {
     align-self: center;
     justify-self: center;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+.header > button {
+    grid-row: 2;
+    border-radius: 30px;
+    width: 200px;
+}
+
+.greeting {
+    grid-column: 1 / 2;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+    background-color: grey;
+    font-size: 30px;
+}
+.Newbtn {
+    grid-column: 2;
+    
+}
+
+.Uploadbtn {
+    grid-column: 3;
+}
+
+.Sharebtn {
+    grid-column: 4;
 }
